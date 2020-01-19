@@ -24,8 +24,34 @@ layout: default
     </div>
     <p class="c-author__about">{{site.about-author | strip_html | truncatewords: 50}}</p>
   </div>
-
+  
   <div class="c-sidebar-footer">
+    <div class="author__urls-wrapper">
+      <ul class="author__urls social-icons">
+        <li itemprop="homeLocation" itemscope="" itemtype="http://schema.org/Place">
+          <i class="fa fa-map-marker"></i><span itemprop="name">{{site.location}}</span>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/in/{{site.social-linkedin}}" itemprop="sameAs">
+            <i class="fa fa-linkedin"></i><span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://github.com/{{site.social-github}}" itemprop="sameAs">
+            <i class="fa fa-github"></i><span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:{{site.social-email}}" itemprop="sameAs">
+            <i class="fa fa-envelope-o"></i><span>Email</span>
+          </a>
+        </li>
+    </ul>
+  </div>
+
+
+
+  </div>
     <div class="c-social">
       <div class="c-social__title">Social</div>
       <ul class="c-social__list u-lists-reset">
@@ -67,6 +93,7 @@ layout: default
       <p>{{site.time | date: '%Y'}} &copy; {{site.author-name}}</p>
     </div>
   </div>
+  
 </aside> <!-- /.c-sidebar -->
 
 <main class="c-content">

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Style Guide
-image: 8.jpg
-date: 2018-03-02 13:35:20 +0200
+title: Model-free Load Control for High Penetration of Photovoltaic generation
+image: 8.png
+date: 2017-01-07 13:35:20 +0200
 tags:
 categories: guide
 ---
