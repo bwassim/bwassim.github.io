@@ -6,7 +6,7 @@ date: 2017-01-07 13:35:20 +0200
 tags:
 categories: guide
 ---
-A paragraph looks like this — dolor amet cray stumptown fingerstache neutra food truck seitan poke cardigan waistcoat VHS snackwave celiac hella. Godard seitan shoreditch flexitarian next level trust fund man braid vegan listicle keytar bitters. Disrupt cray fashion axe unicorn lomo shaman poke glossier keffiyeh snackwave austin tattooed seitan hexagon lo-fi. Lumbersexual irony vaporware, butcher shaman church-key iceland.
+This paper presents a new model-free control (MFC) mechanism that enables the local distribution level circuit consumption of the photovoltaic (PV) generation by local building loads, in particular, distributed heating, ventilation and air conditioning (HVAC) units. The local consumption of PV generation will help minimize the impact of PV generation on the distribution grid, reduce the required battery storage capacity for PV penetration, and increase solar PV generation penetration levels. The proposed MFC approach with its corresponding intelligent controllers does not require any precise model for buildings, where a reliable modeling is a demanding task. Even when assuming the availability of a good model, the various building architectures would compromise the performance objectives of any model-based control strategy. The objective is to consume most of the PV generation locally while maintaining occupants comfort and physical constraints of HVAC units. That is, by enabling proper scheduling of responsive loads temporally and spatially to minimize the difference between demand and PV production, it would be possible to reduce voltage variations and two-way power flow. Computer simulations show promising results where a significant proportion of the PV generation can be consumed by building HVAC units with the help of intelligent control.
 
 ***
 
@@ -26,68 +26,3 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 {% endhighlight %}
 
 ***
-
-#### Lists
-
-###### Ordered list example:
-
-1. Poutine drinking vinegar bitters.
-2. Coloring book distillery fanny pack.
-3. Venmo biodiesel gentrify enamel pin meditation.
-4. Jean shorts shaman listicle pickled portland.
-5. Salvia mumblecore brunch iPhone migas.
-
-###### Unordered list example:
-
-* Bitters semiotics vice thundercats synth.
-* Literally cred narwhal bitters wayfarers.
-* Kale chips chartreuse paleo tbh street art marfa.
-* Mlkshk polaroid sriracha brooklyn.
-* Pug you probably haven't heard of them air plant man bun.
-
-{% highlight markdown %}
-1. Order list item 1
-2. Order list item 1
-
-* Unordered list item 1
-* Unordered list item 2
-{% endhighlight %}
-
-***
-
-#### Quotes
-
-###### A quote looks like this:
-
-> Never put off till tomorrow what may be done day after tomorrow just as well. — Mark Twain
-
-***
-
-#### Syntax Highlighter
-
-{% highlight js %}
-  $('.top').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(window).height()) {
-      $('.top').addClass("top-active");
-    } else {
-      $('.top').removeClass("top-active");
-    };
-  });
-{% endhighlight %}
-
-***
-
-#### Images
-
-![]({{site.baseurl}}/images/2.jpg)
-
-***
-
-#### Videos
-
-###### Youtube
-
-<iframe src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen></iframe>
