@@ -1,7 +1,7 @@
-title: Welcome to Flexton
-description: Flexton is a responsive and ultra-minimal theme for Jekyll.
+title: O-Bara.github.io
+description: This is a site describing some projects I have been working on recently.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "flexton.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "bwassim.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author
 author-name:    Ouassim Bara
@@ -29,7 +29,7 @@ location: Sophia-Antipolis, France
 # google-analytics: # Add your identifier. For example UA-99631805-1
 
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+# disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
 markdown: kramdown
