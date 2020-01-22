@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Publication
+title: Publications
 image: 6.jpg
 date: 2016-12-12 13:35:20 +0200
 tags:
@@ -10,15 +10,14 @@ categories: guide
 
 
 
-These are most of my journal and conferences published these past years. 
 
-
-
+#### Refereed conferences and journal publications
 
 * [J8] O. Bara, M.Fliess, C. Join, J.Day and S.Djouadi. **Towards a new data driven control strategy for treating acute inflammation**. ”Journal of theoretical biology” 448 (2018): 26-37. [https://doi.org/10.1016/j.jtbi.2018.04.003][https://doi.org/10.1016/j.jtbi.2018.04.003]
 
 * [J7] O. Bara, S.M. Djouadi, and J. Day. **Immune Therapeutic Strategies Using Optimal Controls with L1 and L2 Type Objectives**. .” Mathematical biosciences” 290 (2017): 9-21. [https://doi.org/10.1016/j.mbs.2017.05.010][https://doi.org/10.1016/j.mbs.2017.05.010]
 
+* [C9] O. bara, P. Reeves. **An AI based solution for the blind and the visually impaired**. Sophia-Summit workshop on Ariticial Intelligence, 2019 edition. [http://sophia-summit.fr/sophia-summit-2019][http://sophia-summit.fr/sophia-summit-2019]
 
 * [C8] O. Bara, H. Bonnefond, O. Bernard. **Model development and light effect on a rotating algal biofilm**. 12th IFAC Symposium on Dynamics and Control of Process Systems, including Biosystems. April 23-26, 2019, Florianópolis - SC, Brazil. [https://hal.inria.fr/hal-01891661/document][https://hal.inria.fr/hal-01891661/document]
 
@@ -47,6 +46,7 @@ Control of an IEEE ConferDecember 15-18,
 [http://dx.doi.org/10.1109/CDC.2013.6760399]: http://dx.doi.org/10.1109/CDC.2013.6760399
 [https://hal.inria.fr/hal-01891661/document]: https://hal.inria.fr/hal-01891661/document
 [https://doi.org/10.1504/IJAIS.2010.034803]: https://doi.org/10.1504/IJAIS.2010.034803
+[http://sophia-summit.fr/sophia-summit-2019]: http://sophia-summit.fr/sophia-summit-2019
 
 
 

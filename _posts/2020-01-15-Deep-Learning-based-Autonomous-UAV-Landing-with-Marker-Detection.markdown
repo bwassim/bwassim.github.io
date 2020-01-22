@@ -47,7 +47,7 @@ Yolo (You Only Look Once) is a fast object detection algorithm developed by Redm
 
 ![training]({{site.baseurl}}/images/chart1.png){:height="50%" width="50%"}
 
-*Evolution of the mean average precision (`mAP`) together with the average loss during the training, for 2000 iteration*
+*Training Tiny Yolo: Evolution of the mean average precision (`mAP`) together with the average loss during the training, for 2000 iteration*
 
 
 {% highlight markdown %}
@@ -63,7 +63,7 @@ Running the full YOLOv3 model on a Rasberry Pi is a challenging task, provided t
 The diagram below illustrates the operating procedure for the autonomous landing system. The Tiny YOLO localisation algorithm processes the video stream from the on-board camera image by image, so for each image processed, the network generates a set of coordinates composed of the detected object class `c`, its tag center `(x, y)`, with its dimension given in width and height (w, h), as well as the probability `s` of belonging to a class. the full vector is given as follows: `[c, x, y, w, h, s]`. These coordinates are then converted to offset angles with respect to the center of the ground marker. These angles are sent to the autopilot so that the drone moves in a way  the marker is always in the center of the image. It is assumed that the angles of the MAV (yaw, pitch, roll) can be neglected when the offset angles are calculated. 
 
 ![diagram]({{site.baseurl}}/images/diagram.png){:height="30%" width="30%"}
-![ubuntu simulated drone]({{site.baseurl}}/images/sim_drone.jpg){:height="50%" width="50%"}  
+![ubuntu simulated drone]({{site.baseurl}}/images/sim_drone.jpg){:height="60%" width="60%"}  
 *Autonomous landing procedure &nbsp;&nbsp;&nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   Autonomous landing simulation with Unreal Engine Editor*
 
 On the screenshot above, one can observe the Unreal Editor (UE) on the left-hand side running the simulation inside the Landscape Mountain environnement, and showing the drone flying over the marker. On the right-hand side, an extra window is generated to clearly observe the bounding blue box around the detected marker. The Linux terminal is used to launch the UE and of course to run the python code for the autonomous landing procedure.
