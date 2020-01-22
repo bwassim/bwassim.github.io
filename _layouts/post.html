@@ -29,7 +29,7 @@ layout: home
       {{page.content | markdownify}}
     
       <div class="c-recent-post">
-        <h4 class="c-recent__title">You might also enjoy</h4>
+        <h4 class="c-recent__title">You might also find the following posts interesting</h4>
         <div class="c-recent__box">
         {% for post in site.related_posts limit:4 %}
         {% if post.image %}
