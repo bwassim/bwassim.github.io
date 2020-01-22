@@ -28,30 +28,7 @@ layout: home
       </header>
       {{page.content | markdownify}}
     
-      <div class="c-sidebar-author">
-        <div class="author__urls-wrapper">
-          <ul class="author__urls social-icons">
-            <li itemprop="homeLocation" itemscope="" itemtype="http://schema.org/Place">
-              <i class="fa fa-map-marker"></i><span itemprop="name">{{site.location}}</span>
-            </li>
-            <li>
-              <a href="https://in.linkedin.com/in/{{site.social-linkedin}}" itemprop="sameAs">
-                <i class="fa fa-linkedin"></i><span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://github.com/{{site.social-github}}" itemprop="sameAs">
-                <i class="fa fa-github"></i><span>GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:{{site.social-email}}" itemprop="sameAs">
-                <i class="fa fa-envelope-o"></i><span>Email</span>
-              </a>
-            </li>
-        </ul>
-      </div>
-      
+
       <div class="c-recent-post">
         <h4 class="c-recent__title">You might also find the following posts interesting</h4>
         <div class="c-recent__box">
