@@ -8,7 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags: [Deep learning, Computer vision, YOLO]
 ---
 
-`LightHouse` is an application designed to offer a unique experience to the visually impaired or blind person and contribute to their well-being. It leverages the latest advances in Artificial Intelligence (AI), especially in one of its subfields, namely, deep learning. The application would allow anyone in possession of a smartphone and without the use of one’s eyesight to know approximately what's in front of them, what object to look for and provide instructions on how to find it. The innovation of the algorithm stands not only on the latest object detection and localization algorithm, i.e., YOLO, but more importantly, on the many features (modes) that would assist the visually impaired people in their daily life and inside their home. 
+I started working on the developement of the project Lighthouse, few weeks after I have started the project Autopilot-IA. The project was a success and is still under ongoing development. `LightHouse` is an application designed to offer a unique experience to the visually impaired or blind person and contribute to their well-being. It leverages the latest advances in Artificial Intelligence (AI), especially in one of its subfields, namely, deep learning. The application would allow anyone in possession of a smartphone and without the use of one’s eyesight to know approximately what's in front of them, what object to look for and provide instructions on how to find it. The innovation of the algorithm stands not only on the latest object detection and localization algorithm, i.e., YOLO, but more importantly, on the many features (modes) that would assist the visually impaired people in their daily life and inside their home. 
 
 # Motivation
 It is observed that more than 1.7 million people in France experience some trouble in their vision. 207000 are highly visually impaired, amongst them 65000 are blind. 90% of people older than 65 are visually impaired. These numbers are expeted to double in 2050. An application for detecting, localizing and finally guiding the end user towards an object . The application will eventually run on a smartphone and the way it works will be explained. 
@@ -33,7 +33,7 @@ The first thing that comes to mind when designing this kind of application is to
 *Darknet-53 architecture*
 
 ### Interpretation of the output
-I am not going to go through the details of how `YOLO` works, this can be found in the litterature, I will however focus on a key step to understand the rest of the project. To make it simple, one can think of `YOLO` as a bloack box, where :
+I am not going to go through the details of how `YOLO` works, this can be found in the litterature, I will however focus on a key step to understand the rest of the project. To make it simple, one can think of `YOLO` as a black box, where :
 * the input is a batch of images of shape `(m, 416, 416, 3)`, where `m` is the number of images and 
 * the output is a list of bounding boxes along with the recognized classes. Each bounding box of the detected object is represented by `[c, x, y, w, h, s]`. The detected object class `c`, its tag center `(x, y)`, the width and height of the box given as `(w, h)`, as well as the probability `s` of belonging to a class. 
 * YOLOv3 has been trained to recognise 80 category of objects, amongst them the ones that are present in the figure below. 
@@ -43,11 +43,11 @@ As you would have probably guessed, the figure below is a sample of what the out
 
 ![livingroom]({{site.baseurl}}/images/livingroom.jpg){:height="60%" width="60%"}
 
-*Output image of YOLO, displaying the the bounding boxes around the detected objects*
+*Output image of YOLO, displaying the bounding boxes around the detected objects. The table indicates the probability class `s`*
 
 We know where a specific object is located in the image and we have a certain confidence about which class it belongs to. Is this enough to guide a blind or visually impaired person to find what they are lookling for?
 
-The user need to have some sense of 
+`Answer`: The user need to have some sense of 
 * Orientation and 
 * Direction 
 
@@ -60,7 +60,7 @@ Lighthouse is an application designed to run on a smartphone. The way it interac
 * Once the target is defined, the camera feeds the Yolo network with a set of image (frame) per second
 * The Yolo network returns the set of coordinates of the detected objects together with a class probabilities
 * From these information we developped three modes, the user of course, will be offered the possibility to choose amongst the three modes
-* The application will communicate with the user with a TTS algorithm. 
+* The application will communicate back with the user with a TTS algorithm. 
 
 ![architecture]({{site.baseurl}}/images/architecture.png){:height="60%" width="60%"}
 
@@ -71,7 +71,7 @@ Three modes have been developed to guide the user towards finding the lost objec
 
 ### Context Mode
 
-The Context Mode is used by default. This mode exploits the actual setup of the room furniture and the arrangement of different objects to serve as references to guide the user. Once an object has been detected, the angle information together with the depth of the image are used to provide a more precise and complete description of the environment surrounding the object of interest. An algorithm is developped to give sense to all the detected objects with the respect to the targeted one. An Image To Speech (ITS) algorithm is used to interact in real time with the user.
+The Context Mode is used by default. This mode exploits the actual setup of the room furniture and the arrangement of different objects to serve as references to guide the user. Once an object has been detected, the angle information together with the depth of the image are used to provide a more precise and complete description of the environment surrounding the object of interest. An algorithm is developped to give sense to all the detected objects with the respect to the targeted one.
 
 Essentially, we identify three types of object association: 
 * on/under, 
@@ -146,7 +146,7 @@ This mode works in two successive steps. First, the user holding the smartphone 
 * Longer beep indicates object found
 
 The Echo mode relies on the calculation of the angles used in the `Sphere` mode to help in the localisation during the `targeting phase`. 
-The Generated Beep Is Proportional To The `Euclidian Distance` Between The center of The object And the center of The image. It is possible to set a threshold based on the height of the targeted object.
+The generated beep Is proportional to the `Euclidian distance` between the center of the object and the center of the image. It is possible to set a threshold based on the height of the targeted object.
 
 
 
