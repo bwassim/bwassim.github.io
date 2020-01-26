@@ -10,7 +10,7 @@ tags: [Deep learning, Computer vision, YOLO]
 
 I started working on the developement of the project Lighthouse, few weeks after I have started the project Autopilot-IA. The project was a success and is still under ongoing development. `LightHouse` is an application designed to offer a unique experience to the visually impaired or blind person and contribute to their well-being. It leverages the latest advances in Artificial Intelligence (AI), especially in one of its subfields, namely, deep learning. The application would allow anyone in possession of a smartphone and without the use of one’s eyesight to know approximately what's in front of them, what object to look for and provide instructions on how to find it. The innovation of the algorithm stands not only on the latest object detection and localization algorithm, i.e., YOLO, but more importantly, on the many features (modes) that would assist the visually impaired people in their daily life and inside their home. 
 
-# Motivation
+## Motivation
 It is observed that more than 1.7 million people in France experience some trouble in their vision. 207000 are highly visually impaired, amongst them 65000 are blind. 90% of people older than 65 are visually impaired. These numbers are expeted to double in 2050. An application for detecting, localizing and finally guiding the end user towards an object . The application will eventually run on a smartphone and the way it works will be explained. 
 The first thing that comes to mind when designing this kind of application is to use a camera as a replacement to our human vision. One can think of the ouput of a camera (video) as a succesion of images that can be utilized to detect, in real time, different objects in the image .
 
@@ -20,7 +20,7 @@ The first thing that comes to mind when designing this kind of application is to
 
 *Comparing the performance of YOLO with respect to other detection algorithms in function of mean average precision (mAP) and inference time (ms)*
 <!-- *Figure highlighting the performance of YOLOv3 in function of inference time(ms) and mean average precision (mAP)* -->
-# Choice of the object detection neural architecture 
+## Choice of the object detection neural architecture 
  Amongst the many object detection and classification algorithms, this last decade has seen convolutional neural network becoming the standard, from architecture ranging from RCNN, SSD, and many others, YOLO is an object detection and classification algorithm which actually presents the best tradeoff in terms of precision and processing time as one can observe in the above benchmark figure, where 
 
 * The Y axis represent the mean average precision and the X axis the inference time: 
@@ -32,7 +32,7 @@ The first thing that comes to mind when designing this kind of application is to
 
 *Darknet-53 architecture*
 
-### Interpretation of the output
+## Interpretation of the output
 I am not going to go through the details of how `YOLO` works, this can be found in the litterature, I will however focus on a key step to understand the rest of the project. To make it simple, one can think of `YOLO` as a black box, where :
 * the input is a batch of images of shape `(m, 416, 416, 3)`, where `m` is the number of images and 
 * the output is a list of bounding boxes along with the recognized classes. Each bounding box of the detected object is represented by `[c, x, y, w, h, s]`. The detected object class `c`, its tag center `(x, y)`, the width and height of the box given as `(w, h)`, as well as the probability `s` of belonging to a class. 
