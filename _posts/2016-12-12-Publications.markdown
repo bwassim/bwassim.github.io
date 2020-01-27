@@ -25,7 +25,7 @@ categories: guide
 
 * [C6] O. Bara, M. Fliess, C. Join, J.Day and S.M.Djouadi. **Model Free Immune Therapy: A control approach to Acute inflammation**, European Control Conference, Aalborg, DK June 29-July 1, 2016 [https://arxiv.org/abs/1607.07259][https://arxiv.org/abs/1607.07259]
 
-* [C5] O. Bara, S.M. Djouadi, and J. Day. **Immune Therapy using Optimal Control with L 1 Type Objective**, The 2016 American Control Conference, July 6–8, Boston, MA, USA (http://dx.doi.org/10.1109/ACC.2016.7526128) 
+* [C5] O. Bara, S.M. Djouadi, and J. Day. **Immune Therapy using Optimal Control with L 1 Type Objective**, The 2016 American Control Conference, July 6–8, Boston, MA, USA [http://dx.doi.org/10.1109/ACC.2016.7526128][http://dx.doi.org/10.1109/ACC.2016.7526128] 
 
 
 * [C4] O. Bara, J. Day, and S.M Djouadi. **Optimal Inflammatory Immune Response Model**, 52nd ence on Decision and Control, Osaka, Japan, 2015.([http://dx.doi.org/10.1109/CDC.2015.7402388])
@@ -47,6 +47,8 @@ Control of an IEEE ConferDecember 15-18,
 [https://hal.inria.fr/hal-01891661/document]: https://hal.inria.fr/hal-01891661/document
 [https://doi.org/10.1504/IJAIS.2010.034803]: https://doi.org/10.1504/IJAIS.2010.034803
 [http://sophia-summit.fr/sophia-summit-2019]: http://sophia-summit.fr/sophia-summit-2019
+[http://dx.doi.org/10.1109/ACC.2016.7526128]: http://dx.doi.org/10.1109/ACC.2016.7526128
+
 
 
 
