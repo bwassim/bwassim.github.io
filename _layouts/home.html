@@ -36,11 +36,20 @@ layout: default
             <i class="fa fa-linkedin"></i><span>LinkedIn</span>
           </a>
         </li>
+
         <li>
-          <a href="http://github.com/{{site.social-github}}" itemprop="sameAs">
-            <i class="fa fa-github"></i><span>GitHub</span>
+          <a href="https://scholar.google.com/{{site.social-scholar}}" itemprop="sameAs">
+            <i class="fa fa-scholar"></i><span>Google Scholar</span>
           </a>
         </li>
+
+        <li>
+          <a href="https://github.com//{{site.social-github}}" itemprop="sameAs">
+            <i class="fa fa-scholar"></i><span>Github</span>
+          </a>
+        </li>
+
+        
         <li>
           <a href="mailto:{{site.social-email}}" itemprop="sameAs">
             <i class="fa fa-envelope-o"></i><span>Email</span>
@@ -57,10 +66,17 @@ layout: default
           <li class="c-social__item"><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a></li>
         {% else %}
         {% endif %}
+
         {% if site.social-facebook %}
           <li class="c-social__item"><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a></li>
         {% else %}
         {% endif %}
+        
+        {% if site.social-scholar %}
+        <li class="c-social__item"><a href="https://scholar.google.com/{{ site.social-scholar }}" target="_blank"><div data-icon='ei-sc-scholar' data-size='s'></div></a></li>
+        {% else %}
+        {% endif %}
+
         {% if site.social-github %}
           <li class="c-social__item"><a href="https://github.com/{{site.social-github}}" target="_blank"><div data-icon='ei-sc-github' data-size='s'></div></a></li>
         {% else %}
